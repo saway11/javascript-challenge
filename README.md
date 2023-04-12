@@ -13,7 +13,7 @@ The user will begin by clicking on the generate password button in
 order to view questions that will allow the user to generate a password. The questions that will appear will include the option to add lowercase, uppercase, special characters, and numbers. The user will need to generate a password with 8-128 characters and if that is not done than an error message will appear. 
 
 # Screenshot
-![](./assets/images/Screenshot(10).png)
+![](./assets/images/Screenshot%20(10).png)
 
 # Credits
 Tutor: Mazin Abed
