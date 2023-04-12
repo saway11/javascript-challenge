@@ -1,6 +1,5 @@
 var characterLength = 8-128;
 var choiceArr = [];
-
 var specialCharArr =['~','!','@','#','$','%','^','&','*','(',')','_','-','=','+','<'];
 var lowerCaseArr =['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var upperCaseArr =['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
@@ -13,7 +12,8 @@ var generateBtn = document.querySelector("#generate");
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// Write password to the #password input
+// This function will prompt an error message if the user does not
+// add 8-18 characters
 function writePassword() {
   var correctPrompts = getPrompts();
   var passwordText = document.querySelector("#password");
@@ -25,7 +25,7 @@ function writePassword() {
     passwordText.value = "";
   }
 }
-
+// This function allows a new password to generate after clicking the generate password button
 function generatePassword() {
   var password = "";
   for(var i = 0; i < characterLength; i++) {
@@ -35,6 +35,8 @@ function generatePassword() {
   return password;
 }
 
+// This will prompt the questions where the user can add lowercase, uppercase, numbers
+// special characters and the character length which is 8-128
 function getPrompts() {
   choiceArr = [];
 
